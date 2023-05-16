@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عربة التسوق</title>
+    
+<!--  bootstrab -->
+<link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+<!-- font awesome library -->
+<link rel="stylesheet" href="css/all.min.css">
+<!-- render all elements normally -->
+<link rel="stylesheet" href="css/normalize.css">
+<!-- main template css file -->
+<link rel="stylesheet" href="css/master.css">
+<!-- main template css file -->
+<link rel="stylesheet" href="css/cart.css">
+<!-- aos animate -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<!-- <link rel="stylesheet" href="css/aos.css"> -->
+    
+ <!--================================  -->
+
+
+<!-- Main Theme Styles + Bootstrap-->
+<link rel="stylesheet" media="screen" href="css/theme.min.css">
+  
+
+</head>
+<body>
+
+<!--=================
+    start top nav 
+==================-->
+
+<div class="nav-top-div">
+    <section class="nav-top-s">
+        <nav class="nav-top" id="top-nav">
+            <div class="container">
+                <div class="content">
+                    <div class="contact">
+                        <i class="fa fa-envelope "></i>
+                        <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:handcraft@gmail.com">handcraft@gmail.com</a>
+                        <i class="fa-solid fa-phone-flip "></i>
+                        <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                    </div>
+                    <div class="icons">
+                        <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f  "></i></a>
+                        <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram "></i></a>
+                        <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter  "></i></a>
+                        <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin "></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    </div>
+
+<!--=================
+   end top nav 
+ ==================-->
+
+<!-- ============================================================= -->
+
+<!--=================
+    start header 
+==================-->
+
+
+<header class="header" id="home" >
+
+    
+  <div class="header-1">
+      <div id="menu-bar" class="fas fa-bars">
+
+      </div>
+      <div class="nav-menu">
+          <a href="index.html" >الصفحة الرئيسية</a>
+          <a href="index.html #banner-s">الأقسام</a>
+          <a href="index.html #shop">المتجر</a>
+          <a href="index.html #contact">تواصل معنا</a>
+      
+      </div>
+
+      <a href="index.html" class="logo">ᕼᗩᑎᗪ <span>ᑕᖇᗩᖴㄒ</span></a> 
+
+      <form action="" class="search-form">
+          
+          <input type="search" name="" id="search-box" placeholder="ابحث هنا..">
+          <label for="search-box" class="fas fa-search"></label>   
+      </form>
+      <div class="icons">
+          <div id="search-btn" class="fas fa-search"></div>
+          <div id="login-btn" class="fas fa-user " style="display: none;"></div>
+          <a class=" fas fa-user" data-bs-target="#signin-modal" data-bs-toggle="modal"></a>
+          <a href="cart.html" class="fas fa-shopping-cart"></a>          
+      </div>
+      
+  </div>
+
+</header>
+
+<!--=== sign in / sign up form ===-->
+
+<div class="modal fade " id="signin-modal" tabindex="-1" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <ul class="nav nav-tabs card-header-tabs" role="tablist">
+          <li class="nav-item" role="presentation"><a class="nav-link active" href="#signin-tab" data-bs-toggle="tab" role="tab" aria-selected="true"><i class="fa-solid fa-unlock-keyhole"></i>تسجيل الدخول</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#signup-tab" data-bs-toggle="tab" role="tab" aria-selected="false" tabindex="-1"><i class="fa-solid fa-user"></i>إنشاء حساب</a></li>
+        </ul>
+        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body tab-content py-4 cont">
+        <form class="needs-validation tab-pane fade active show content" autocomplete="off" novalidate="" id="signin-tab" role="tabpanel">
+          <div class="mb-3">
+            <label class="form-label" for="si-email">البريد الإلكتروني</label>
+            <input class="form-control" type="email" id="si-email" placeholder="name@example.com" required="">
+            <div class="invalid-feedback">يرجى كتابة عنوان بريد إلكتروني صالح.</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="si-password">كلمة السر</label>
+            <div class="password-toggle">
+              <input class="form-control" type="password" id="si-password" required="">
+              <label class="password-toggle-btn" aria-label="Show/hide password">
+                <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"><i class="fa-solid fa-eye"></i></span>
+              </label>
+            </div>
+          </div>
+          <div class="mb-3 d-flex flex-wrap justify-content-between">
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="checkbox" id="si-remember">
+              <label class="form-check-label" for="si-remember">تذكرنى</label>
+            </div>
+            <!-- <a class="fs-sm" href="#signup-tab">هل نسيت كلمة السر؟</a> -->
+            <a class="" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">هل نسيت كلمة السر؟</a>
+          </div>
+          <button class="btn btn-success btn-shadow d-block w-100" type="submit">تسجيل الدخول</button>
+        </form>
+        <form class="needs-validation tab-pane fade content" autocomplete="off" novalidate="" id="signup-tab" role="tabpanel">
+          <div class="mb-3">
+            <label class="form-label" for="su-name">الإسم الكامل</label>
+            <input class="form-control" type="text" id="su-name" placeholder="فلان الفلاني" required="">
+            <div class="invalid-feedback">اكتب اسمك لو سمحت.</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="si-email">البريد الإلكتروني</label>
+            <input class="form-control" type="email" id="si-email" placeholder="name@example.com" required="">
+            <div class="invalid-feedback">يرجى كتابة عنوان بريد إلكتروني صالح.</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="su-password">كلمة السر</label>
+            <div class="password-toggle">
+              <input class="form-control" type="password" id="su-password" required="">
+              <label class="password-toggle-btn" aria-label="Show/hide password">
+                <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"><i class="fa-solid fa-eye"></i></span>
+              </label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="su-password-confirm">تأكيد كلمة السر</label>
+            <div class="password-toggle">
+              <input class="form-control" type="password" id="su-password-confirm" required="">
+              <label class="password-toggle-btn" aria-label="Show/hide password">
+                <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"><i class="fa-solid fa-eye"></i></span>
+              </label>
+            </div>
+          </div>
+          <button class="btn btn-success btn-shadow d-block w-100" type="submit">إنشاء</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--=== Create a new password form ===-->
+
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">البحث عن حسابك</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="mb-3">
+              <label class="form-label" for="si-email">يرجى إدخال بريدك الإلكتروني للبحث عن حسابك.</label>
+              <input class="form-control" type="email" id="si-email" placeholder="name@example.com" required="">
+              <div class="invalid-feedback">يرجى كتابة عنوان بريد إلكتروني صالح.</div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">إرسال</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">البحث عن حسابك</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        إدخل اللكود
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">إرسال</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel3">إنشاء كلمة سر جديدة</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="mb-3">
+              <label class="form-label" for="su-password">كلمة السر</label>
+              <div class="password-toggle">
+                <input class="form-control" type="password" id="su-password" required="">
+                <label class="password-toggle-btn" aria-label="Show/hide password">
+                  <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"><i class="fa-solid fa-eye"></i></span>
+                </label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="su-password-confirm">تأكيد كلمة السر</label>
+              <div class="password-toggle">
+                <input class="form-control" type="password" id="su-password-confirm" required="">
+                <label class="password-toggle-btn" aria-label="Show/hide password">
+                  <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"><i class="fa-solid fa-eye"></i></span>
+                </label>
+              </div>
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success" data-bs-target="" data-bs-toggle="modal">إنشاء</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--=================
+    end header 
+==================-->
+
+<!-- ============================================================= -->
+
+<!--=================
+    start home 
+==================-->
+<div class="bg-home">
+  <section class="home" >
+      <div class="row " >
+        <div class="content row-home"> 
+            <h1 class="page">  عربة التسوق </h1>
+        </div> 
+    
+        <div class="title-page row-home">
+            <h3 class="page-title"><a href="index.html">الصفحة الرئيسية / </a>  <span><small>عربة التسوق</small></span></h3>
+        </div>
+        
+      </div>
+   
+ </section>
+</div>
+
+<!--=================
+    end home 
+==================-->
+
+<!-- ============================================================= -->
+
+<!--=================
+    start arrival 
+==================-->
+<section>
+<div class="rounded-3 shadow-lg mt-4 mb-5">
+    <ul class="nav nav-tabs nav-justified mb-4">
+      <li class="nav-item"><a class="nav-link fs-lg fw-medium py-4 active" href="food-delivery-cart.html">منتجاتك .1</a></li>
+      <li class="nav-item"><a class="nav-link fs-lg fw-medium py-4" href="checkout.html">إتمام الشراء .2</a></li>
+    </ul>
+    <div class="px-3 px-sm-4 px-xl-5 pt-1 pb-4 pb-sm-5">
+      <div class="row">
+        <!-- Items in cart-->
+        <div class="col-lg-8 col-md-7 pt-sm-2">
+          <!-- Item-->
+          <div class="d-sm-flex justify-content-between align-items-center mt-3 mb-4 pb-3 border-bottom">
+            <div class="d-block d-sm-flex align-items-center text-center text-sm-start"><a class="d-inline-block flex-shrink-0 mx-auto me-sm-4" href="#"><img src="images/cart-img/1.jpg" width="120" alt="Pizza"></a>
+              <div class="pt-2">
+                <h3 class="product-title fs-base mb-2"><a href="#">خدادية ديكور</a></h3>
+                <div class="fs-sm"><span class="text-muted me-2">المقاسات :</span> 40×30 سم</div>
+                <div class="fs-sm"><span class="text-muted me-2">اللون :</span>أرجواني</div>
+                <div class="fs-lg text-accent pt-2">EGP 299.<small>00</small></div> 
+              </div>
+            </div>
+            <div class="pt-2 pt-sm-0 ps-sm-3 mx-auto mx-sm-0 text-center text-sm-start" style="max-width: 14rem;">
+              <label class="form-label" for="quantity1">العدد</label>
+              <input class="form-control" type="number" id="quantity1" value="1" min="1">
+              <button class="btn btn-link px-0 text-danger" type="button"><i class="ci-close-circle me-2"></i><span class="fs-sm">إزالة</span></button>
+            </div>
+          </div>
+          <!-- Item-->
+          <div class="d-sm-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
+            <div class="d-block d-sm-flex align-items-center text-center text-sm-start"><a class="d-inline-block flex-shrink-0 mx-auto me-sm-4" href="#"><img src="images/cart-img/2.jpeg" width="120" alt="Burger"></a>
+              <div class="pt-2">
+                <h3 class="product-title fs-base mb-2"><a href="#">شنطة خيط مكرمية</a></h3>
+                <div class="fs-sm"><span class="text-muted me-2">المقاسات :</span> L </div>
+                <div class="fs-sm"><span class="text-muted me-2">اللون :</span>اخضر</div>
+                <div class="fs-lg text-accent pt-2">EGP 397.<small>00</small></div> 
+              </div>
+            </div>
+            <div class="pt-2 pt-sm-0 ps-sm-3 mx-auto mx-sm-0 text-center text-sm-start" style="max-width: 14rem;">
+              <label class="form-label" for="quantity1">العدد</label>
+              <input class="form-control" type="number" id="quantity1" value="1" min="1">
+              <button class="btn btn-link px-0 text-danger" type="button"><i class="ci-close-circle me-2"></i><span class="fs-sm">إزالة</span></button>
+            </div>
+          </div>
+          <!-- Item-->
+          <div class="d-sm-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
+            <div class="d-block d-sm-flex align-items-center text-center text-sm-start"><a class="d-inline-block flex-shrink-0 mx-auto me-sm-4" href="#"><img src="images/cart-img/3.jpg" width="120" alt="Drink"></a>
+              <div class="pt-2">
+                <h3 class="product-title fs-base mb-2"><a href="#">بوك مارك هاند ميد مكرمية</a></h3>
+                <div class="fs-sm"><span class="text-muted me-2">المقاسات :</span> 20 سم</div>
+                <div class="fs-sm"><span class="text-muted me-2">اللون :</span>أرجواني</div>
+                <div class="fs-lg text-accent pt-2">EGP 50.<small>00</small></div> 
+              </div>
+            </div>
+            <div class="pt-2 pt-sm-0 ps-sm-3 mx-auto mx-sm-0 text-center text-sm-start" style="max-width: 14rem;">
+              <label class="form-label" for="quantity1">العدد</label>
+              <input class="form-control" type="number" id="quantity1" value="1" min="1">
+              <button class="btn btn-link px-0 text-danger" type="button"><i class="ci-close-circle me-2"></i><span class="fs-sm">إزالة</span></button>
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar-->
+        <div class="col-lg-4 col-md-5 pt-3 pt-sm-4">
+          <div class="rounded-3 bg-secondary px-3 px-sm-4 py-4">
+            <div class="text-center mb-4 pb-3 border-bottom">
+              <h3 class="h5 mb-3 pb-1">المجموع</h3>
+              <h4 class="fw-normal">EGP 299.<small>00</small></h4>
+            </div>
+            <div class="mb-4">
+              <label class="form-label mb-3" for="order-comments"><span class="badge bg-info fs-xs me-2">ملاحظة</span>كتابة ملاحظات مع الطلب.</label>
+              <textarea class="form-control" rows="4" id="order-comments"></textarea>
+            </div>
+            <h3 class="h6 mb-4">إضافة كود الخصم (promo code)</h3>
+            <form class="needs-validation" method="post" novalidate="">
+              <div class="mb-3">
+                <input class="form-control" type="text" placeholder="كود الخصم" required="">
+                <div class="invalid-feedback">Please provide promo code.</div>
+              </div>
+              <button class="btn btn-outline-success d-block w-100" type="submit">تأكيد كود الخصم</button>
+            </form><a class="btn btn-success btn-shadow d-block w-100 mt-4 mb-3" href="checkout.html"><i class="ci-card fs-lg me-2"></i>إتمام الطلب مع التسجيل</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--=================
+    end arrival 
+==================-->
+
+<!-- ============================================================= -->
+
+<!--=================
+    start footer 
+==================-->
+
+<div class="footer">
+  <section class="footer-section">
+      <div class="box-container" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+
+         <div class="box">
+             <h3> الأقسام</h3>
+             <a href="clothes.html"><i class="fa-solid fa-arrow-left"></i> ملابس</a>
+             <a href="Decorations.html"><i class="fa-solid fa-arrow-left"></i>  ديكورات</a>
+             <a href="accessories.html"><i class="fa-solid fa-arrow-left"></i>  اكسسوارات</a>
+             <a href="shoes-bags.html"><i class="fa-solid fa-arrow-left"></i> احذية& شنط</a>
+             
+             
+         </div>
+
+         <div class="box">
+             <h3>روابط سريعة</h3>
+             <a href="index.html"><i class="fa-solid fa-arrow-left"></i> الصفحة الرئيسية</a>
+             <a href="index.html #shop"><i class="fa-solid fa-arrow-left"></i> المتجر</a>
+             <a href="cart.html"><i class="fa-solid fa-arrow-left"></i> عربة التسوق</a>
+             <a href="index.html #contact"><i class="fa-solid fa-arrow-left"></i>  تواصل معنا</a>
+         </div>
+
+         <div class="box">
+             <h3>معلومات عنا</h3>
+             <p>هدفنا الأول والأخير هو تسويق منتجات الحرف اليدوية والحرص علي تنمية هذة الحرف وسهولة تداول منتجاتها بين الناس</p>
+         </div>
+      
+      </div>
+
+      <!-- social media -->
+      <div class="share">
+          <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook"  data-aos="fade-up" data-aos-duration="800" data-aos-once="true">   </a>
+          <a href="https://twitter.com/" target="_blank" class="fab fa-twitter"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">   </a>
+          <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"  data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">  </a>
+          <a href="https://www.linkedin.com/" target="_blank" class="fab fa-linkedin"  data-aos="fade-up" data-aos-duration="1400" data-aos-once="true">  </a>
+          <a href="https://www.pinterest.com/" target="_blank" class="fab fa-pinterest"  data-aos="fade-up" data-aos-duration="1600" data-aos-once="true">  </a>
+      </div>
+
+         <div class="credit" > All rights reserved. Made by  <span>me</span> </div>
+
+         <span class="up"> <i class="fa-solid fa-chevron-up"></i> </span>
+      
+  </section>
+</div>
+
+
+<!--=================
+   end footer 
+==================-->
+
+<!-- ============================================================= -->
+
+<!--=================
+   js files 
+==================-->
+
+<!-- bootstrab -->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- aos animate -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init(
+      duration= 1000
+    );
+  </script>
+<script>
+ AOS.init(
+   duration= 1000
+ );
+</script>
+
+ <!-- Main theme script-->
+ <script src="js/theme.min.js"></script>
+
+<!-------- script js  ----------->
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

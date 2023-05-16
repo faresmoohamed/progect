@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    
+
+    <!--  bootstrab -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- render all elements normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- main template css file -->
+    <link rel="stylesheet" href="css/styel.css">
+    <!-- aos animate -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+</head>
+
+<!--- body --->
+
+<body>
+
+<!--=================
+    start top nav 
+==================-->
+
+<div class="nav-top-div">
+<section class="nav-top-s">
+    <nav class="nav-top" id="top-nav">
+        <div class="container">
+            <div class="content">
+                <div class="contact">
+                    <i class="fa fa-envelope "></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:handcraft@gmail.com">handcraft@gmail.com</a>
+                    <i class="fa-solid fa-phone-flip "></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                </div>
+                <div class="icons">
+                    <a class="text-light" href="https://www.facebook.com" target="_blank" rel="sponsored"><i class="fab fa-facebook-f  "></i></a>
+                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram "></i></a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter  "></i></a>
+                    <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin "></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+</div>
+<!--=================
+   end top nav 
+==================-->
+
+<!-- ============================================================= -->
+
+
+<!--=================
+    start header 
+==================-->
+
+<header class="header" id="home" >
+
+    
+    <div class="header-1">
+        <div id="menu-bar" class="fas fa-bars">
+
+        </div>
+        <div class="nav-menu">
+            <a href="index.html" >الصفحة الرئيسية</a>
+            <a href="#banner-s">الأقسام</a>
+            <a href="#shop">المتجر</a>
+            <a href="#contact">تواصل معنا</a>
+        
+        </div>
+        <a href="index.html" class="logo">ᕼᗩᑎᗪ <span>ᑕᖇᗩᖴㄒ</span></a> 
+        
+
+        <form action="" class="search-form">
+            
+            <input type="search" name="" id="search-box" placeholder="ابحث هنا..">
+            <label for="search-box" class="fas fa-search"></label>   
+        </form>
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="login-btn" class="fas fa-user " style="display: none;"></div>
+            <a class=" fas fa-user" data-bs-target="#signin-modal" data-bs-toggle="modal"></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>          
+        </div>
+        
+    </div>
+
+
+
+
+    <div class="header-2">
+        <nav class="navbar p-0">
+            <a href="index.html">الصفحة الرئيسية</a>
+            <!-- <a href="#banner-s">الأقسام</a> -->
+
+            <div class="dropdown">
+                <a href="#banner-s">
+                    الأقسام
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="clothes.html">ملابس</a></li>
+                  <li><a class="dropdown-item" href="Decorations.html">ديكورات</a></li>
+                  <li><a class="dropdown-item" href="accessories.html">إكسسوارات</a></li>
+                  <li><a class="dropdown-item" href="shoes-bags.html">أحذية & شنط</a></li>
+                </ul>
+              </div>
+
+            <a href="#shop">المتجر</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+        
+    </div>
+    
+
+</header>
+<!-- ============================================================= -->
+
+<!--=================
+sign in / sign up form
+==================-->
+
+<div class="modal fade " id="signin-modal" tabindex="-1" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header ">
+          <ul class="nav nav-tabs card-header-tabs" role="tablist">
+            <li class="nav-item" role="presentation"><a class="nav-link active" href="#signin-tab" data-bs-toggle="tab" role="tab" aria-selected="true"><i class="fa-solid fa-unlock-keyhole"></i>تسجيل الدخول</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#signup-tab" data-bs-toggle="tab" role="tab" aria-selected="false" tabindex="-1"><i class="fa-solid fa-user"></i>إنشاء حساب</a></li>
+          </ul>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body tab-content py-4 cont">
+          <form class="needs-validation tab-pane fade active show content" autocomplete="off" novalidate="" id="signin-tab" role="tabpanel">
+            <div class="mb-3">
+              <label class="form-label" for="si-email">البريد الإلكتروني</label>
+              <input class="form-control" type="email" id="si-email" placeholder="name@example.com" required="">
+              <div class="invalid-feedback">يرجى كتابة عنوان بريد إلكتروني صالح.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="si-password">كلمة السر</label>
+              <div class="password-toggle">
+                <input class="form-control" type="password" id="si-password" required="">
+                <label class="password-toggle-btn" aria-label="Show/hide password">
+                  <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"><i class="fa-solid fa-eye"></i></span>
+                </label>
+              </div>
+            </div>
+            <div class="mb-3 d-flex flex-wrap justify-content-between">
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="si-remember">
+                <label class="form-check-label" for="si-remember">تذكرنى</label>
+              </div>
+            </div>
+            <button class="btn btn-success btn-shadow d-block w-100" type="submit">تسجيل الدخول</button>
+          </form>
+          <form class="needs-validation tab-pane fade content" autocomplete="off" novalidate="" id="signup-tab" role="tabpanel">
+            <div class="mb-3">
+              <label class="form-label" for="su-name">الإسم الكامل</label>
+              <input class="form-control" type="text" id="su-name" placeholder="فلان الفلاني" required="">
+              <div class="invalid-feedback">اكتب اسمك لو سمحت.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="si-email">البريد الإلكتروني</label>
+              <input class="form-control" type="email" id="si-email" placeholder="name@example.com" required="">
+              <div class="invalid-feedback">يرجى كتابة عنوان بريد إلكتروني صالح.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="su-password">كلمة السر</label>
+              <div class="password-toggle">
+                <input class="form-control" type="password" id="su-password" required="">
+                <label class="password-toggle-btn" aria-label="Show/hide password">
+                  <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"><i class="fa-solid fa-eye"></i></span>
+                </label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="su-password-confirm">تأكيد كلمة السر</label>
+              <div class="password-toggle">
+                <input class="form-control" type="password" id="su-password-confirm" required="">
+                <label class="password-toggle-btn" aria-label="Show/hide password">
+                  <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"><i class="fa-solid fa-eye"></i></span>
+                </label>
+              </div>
+            </div>
+            <button class="btn btn-success btn-shadow d-block w-100" type="submit">إنشاء</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ==================== -->
+
+<!--=================
+    end header 
+==================-->
+
+<!-- ============================================================= -->
+
+<!--=================
+    start home 
+==================-->
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" >
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" class="" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" class="" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <div class="container">
+              <div class="row p-6">
+                  <div class="mx-auto col-md-8 col-lg-6 order-lg-last"  data-aos="fade-up"  data-aos-duration="800" >
+                      <img class="img-fluid" src="images/carousel/img1.png" alt="">
+                  </div>
+                  <div class="col-lg-6 mb-0 d-flex align-items-center" data-aos="fade-up"  data-aos-duration="800">
+                      <div class="text-align-left align-self-center  mx-auto my-5">
+                          <h4 class="h">أحدث منتجات  2023</h4>
+                          <h2 class="hh">خصم <span>20%</span> علي المنتجات الجديدة</h2>
+                          
+                          <h3 class="ha"><a href="#">تسوق الأن</a></h3>
+                          <!-- <a href="#banner-s" class="btn">تسوق الأن</a> -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <div class="container">
+              <div class="row p-6">
+                  <div class="mx-auto col-md-8 col-lg-6 order-lg-last" data-aos="fade-up"  data-aos-duration="800">
+                      <img class="img-fluid" src="images/carousel/img2--.png" alt="">
+                  </div>
+                  <div class="col-lg-6 mb-0 d-flex align-items-center" data-aos="fade-up"  data-aos-duration="800">
+                      <div class="text-align-left  mx-auto my-5">
+                          
+                              <h4 class="h">أحدث منتجات  2023</h4>
+                              <h3 class="hh">خصم  <span>20%</span> علي المنتجات الجديدة</h3>
+                              <h4 class="ha"><a href="#">تسوق الأن</a></h4>
+                              <!-- <a href="#banner-s" class="btn">تسوق الأن</a> -->
+                         
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="carousel-item ">
+          <div class="container">
+              <div class="row p-6">
+                  <div class="mx-auto col-md-8 col-lg-6 order-lg-last" data-aos="fade-up"  data-aos-duration="800">
+                      <img class="img-fluid" src="images/carousel/img3--.png" alt="">
+                  </div>
+                  <div class="col-lg-6 mb-0 d-flex align-items-center " data-aos="fade-up"  data-aos-duration="800">
+                      <div class="text-align-left  mx-auto my-5">
+                          <h4 class="h">أحدث منتجات  2023</h4>
+                          <h3 class="hh">خصم <span>20%</span> علي المنتجات الجديدة</h3>
+                          
+                          <h4 class="ha"><a href="#">تسوق الأن</a></h4>
+                          <!-- <a href="#banner-s" class="btn">تسوق الأن</a> -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <a class="carousel-control-prev text-decoration-none w-auto ps-5 arrow-left arrow" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+      <i class="fas fa-chevron-right"></i>
+  </a>
+  <a class="carousel-control-next text-decoration-none w-auto pe-5 arrow-right arrow" href="#carouselExampleDark" role="button" data-bs-slide="next">
+      <i class="fas fa-chevron-left"></i>
+  </a>
+  </div>
+
+<!--=================
+    end home
+==================-->
+
+<!-- ============================================================= -->
+
+<!--=================
+    start banner
+==================-->
+
+<section class="banner-s "  id="banner-s">
+<div  data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+    <h1 class="heading" >تصفح أقسامنا</h1>
+    <p class="heading-p" > تصفح الأقسام لمزيد من المنتجات</p>
+</div>
+    <div class="banner-container">
+    
+        <div class="row2" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+            <div class="col1" >
+                <div class="banner" >
+                    <a href="accessories.html">
+                        <img src="images/banner-img/accsesores.jpg" alt="">
+                        <!-- <p>إكسسوارات</p> -->
+                        <p>إكسسوارات. <br> ستجد كل ما تبحث عنه هنا.</p>
+
+                    </a>
+                    
+                </div>
+            
+                <div class="banner" >
+                    <a href="clothes.html">
+                        <img src="images/banner-img/clothes.jpg" alt="">
+                        <!-- <p>ملابس</p> -->
+                        <p>ملابس. <br> ستجد كل ما تبحث عنه هنا.</p>
+                    </a>
+                  
+                </div>
+            </div>
+            <div class="col2" >
+                <div class="banner">
+                    <a href="shoes-bags.html">
+                        <img src="images/banner-img/bage.jpg" alt="">
+                        <!-- <p>أحذية & شنط</p> -->
+                        <p>أحذية & شنط. <br> ستجد كل ما تبحث عنه هنا.</p>
+                    </a>
+                   
+                  
+                </div>
+            
+                <div class="banner" >
+                    <a href="Decorations.html">
+                        <img src="images/banner-img/decor.jpg" alt="">
+                        <!-- <p>ديكورات </p> -->
+                        <p>ديكورات. <br> ستجد كل ما تبحث عنه هنا.</p>
+                    </a>
+                  
+                </div>
+            </div>
+    
+        </div>
+      
+      
+      
+       
+    
+       
+    
+    </div>
+    </section>
+
+<!--=================
+    end banner
+==================-->
+
+<!-- ============================================================= -->
+
+<!--=================
+    detail modal
+==================-->
+
+  <div class="modal fade " id="detail-modal" tabindex="-1" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content overflow-hidden border-0">
+        
+          <button class="btn-close detail-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        
+        <div class="modal-body detail-body ">
+            <div class="row align-items-stretch">
+              <div class="col-lg-6 p-lg-0"><a class="glightbox product-view"  > <img src="images/shop-img/1-350x350.jpg" width =100% alt=""></a></div>
+              <div class="col-lg-6">
+                <div class="p-4 my-md-4 datail-cont">
+                  <ul class="list-inline mb-2">
+                    <li class="list-inline-item m-0"><i class="fas fa-star small text-warning"></i></li>
+                    <li class="list-inline-item m-0 1"><i class="fas fa-star small text-warning"></i></li>
+                    <li class="list-inline-item m-0 2"><i class="fas fa-star small text-warning"></i></li>
+                    <li class="list-inline-item m-0 3"><i class="fas fa-star small text-warning"></i></li>
+                    <li class="list-inline-item m-0 4"><i class="fas fa-star small text-warning"></i></li>
+                  </ul>
+                  <h2 class="h4">شنطة كروشيه كروس حريمي </h2>
+                  <p class="text-muted">160.00 EGP  </p>
+                  <p class="text-sm mb-4">   شنطة كروشيه كروس حريمي هاند ميد لون رمادي مقاس 30 مصنوعه من اجود انواع الخيوط   </p>
+                  <div class="row foot align-items-stretch mb-4 gx-0">
+                    <div class="col-sm-7">
+                      <div class="border d-flex align-items-center justify-content-between py-1 px-3"><span class="small  text-gray mr-4 no-select">العدد</span>
+                        <input class="form-control quantity" type="number" id="quantity1" value="1" min="1">
+                        <!-- <div class="quantity">  
+                          <button class="dec-btn p-0"><i class="fas fa-caret-left"></i></button>
+                          <input class="form-control border-0 shadow-0 p-0" type="text" value="1">
+                          <button class="inc-btn p-0"><i class="fas fa-caret-right"></i></button>
+                        </div> -->
+                      </div>
+                    </div>
+                    <!-- <div class="col-sm-5"> <a href="#"><button class="btn btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0"><i class="fas fa-shopping-cart"> </i> اضافة للعربة</button></a></div> -->
+                    <div class="col-sm-5"> <a href="#" class="btn detail-btn btn-sm w-100 h-100 d-flex align-items-center justify-content-center px-0"><i class="fas fa-shopping-cart"> </i>اضافة للعربة </a></div>
+                    
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ============================================================= -->
+
+<!--=================
+    start arrival
+==================-->
+<section class="arrival" id="shop">
+    <div data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+        <h1 class="heading">المتجر</h1>
+        <p class="heading-p">أحدث المنتجات تداولا</p>
+    </div>
+    <div class="row">
+      <!-- PRODUCT-->
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="product-box"   data-aos="fade-up" data-aos-duration="800" data-aos-once="true" >
+            <div class="position-relative ">
+                <div class="image">
+                    <img src="images/shop-img/1-350x350.jpg" width= 100% alt="" class="product-img ">
+                </div>
+                <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-shopping-cart add-cart"></a>
+                    <a href="#detail-modal" style="--i:2;" class="fa-solid fa-expand" data-bs-toggle="modal"></a>
+                </div>
+            </div>
+            <div class="info">
+                <a href="detail.html">
+                    <h3 class="product-title "> شنطة كروشيه كروس حريمي هاند ميد </h3>
+                </a>
+
+                
+                
+                <div class="supinfo">
+                    <strong class="price" class="product-price"> 160.00 EGP <SPan>275.00 EGP</SPan></strong> 
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </div>
+      <!-- PRODUCT-->
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="product-box" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+            <div class="position-relative ">
+                <div class="image">
+                    <img src="images/shop-img/2-350x350.png" width= 100% alt="">
+                </div>
+                <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-shopping-cart add-cart"></a>
+                    <a href="#detail-modal" style="--i:2;" class="fa-solid fa-expand" data-bs-toggle="modal"></a>
+                </div>
+            </div>
+            <div class="info">
+                
+                <a href="detail.html">
+                    <h3> طقم عقد لولي مايوركا هاند ميد </h3>
+                </a>
+                <div class="supinfo">
+                    <strong class="price">260.00 EGP<SPan>290.00 EGP</SPan></strong>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- PRODUCT-->
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="product-box" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+            <div class="position-relative ">
+                <div class="image">
+                    <img src="images/shop-img/3-6570-8-1-350x350.jpeg" width= 100% alt="">
+                </div>
+                <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-shopping-cart add-cart"></a>
+                    <a href="#detail-modal" style="--i:2;" class="fa-solid fa-expand" data-bs-toggle="modal"></a>
+                </div>
+            </div>
+            <div class="info">
+                <a href="detail.html">
+                    <h3> شبشب كروشيه  حريمي</h3>
+                </a>
+                <div class="supinfo">
+                    <strong class="price">110.00 EGP <SPan>145.00 EGP</SPan></strong>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </div>
+      <!-- PRODUCT-->
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="product-box" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+            <div class="position-relative ">
+                <div class="image">
+                    <img src="images/shop-img/8_n-350x350.jpg" width= 100% alt="">
+                </div>
+                <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-shopping-cart add-cart"></a>
+                    <a href="#detail-modal" style="--i:2;" class="fa-solid fa-expand" data-bs-toggle="modal"></a>
+                </div>
+            </div>
+            <div class="info">
+                <a href="detail.html">
+                    <h3> تابلوه</h3>
+                </a>
+                <div class="supinfo">
+                    <strong class="price">305.00 EGP <SPan>345.00 EGP</SPan></strong>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- PRODUCT-->
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="product-box" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+            <div class="position-relative ">
+                <div class="image">
+                    <img src="images/shop-img/5-350x350.jpg" width= 100% alt="">
+                </div>
+                <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-shopping-cart add-cart"></a>
+                    <a href="#detail-modal" style="--i:2;" class="fa-solid fa-expand" data-bs-toggle="modal"></a>
+                </div>
+            </div>
+            <div class="info">
+                <a href="detail.html">
+                    <h3> اسكارف</h3>
+                </a>
+                <div class="supinfo">
+                    <strong class="price">260.00 EGP <SPan>290.00 EGP</SPan></strong>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- PRODUCT-->
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="product-box" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+            <div class="position-relative ">
+                <div class="image">
+                    <img src="images/shop-img/6_AC_UL320_.jpg" width= 100% alt="">
+                </div>
+                <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-shopping-cart add-cart"></a>
+                    <a href="#detail-modal" style="--i:2;" class="fa-solid fa-expand" data-bs-toggle="modal"></a>
+                </div>
+            </div>
+            <div class="info">
+                <a href="detail.html">
+                    <h3> شمعه</h3>
+                </a>
+                <div class="supinfo">
+                    <strong class="price">60.00 EGP <SPan>90.00 EGP</SPan></strong>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- PRODUCT-->
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="product-box" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+            <div class="position-relative ">
+                <div class="image">
+                    <img src="images/shop-img/7-350x350.jpg" width= 100% alt="">
+                </div>
+                <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-shopping-cart add-cart"></a>
+                    <a href="#detail-modal" style="--i:2;" class="fa-solid fa-expand" data-bs-toggle="modal"></a>
+                </div>
+            </div>
+            <div class="info">
+                <a href="detail.html">
+                    <h3>  تابلوه</h3>
+                </a>
+                <div class="supinfo">
+                    <strong class="price">250.00 EGP <SPan>300.00 EGP</SPan></strong>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- PRODUCT-->
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="product-box" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+            <div class="position-relative ">
+                <div class="image">
+                    <img src="images/shop-img/8-350x350.jpg" width= 100% alt="">
+                </div>
+                <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-shopping-cart add-cart"></a>
+                    <a href="#detail-modal" style="--i:2;" class="fa-solid fa-expand" data-bs-toggle="modal"></a>
+                </div>
+            </div>
+            <div class="info">
+                <a href="detail.html">
+                    <h3> بلوزه هاند ميد حريمي شتوي</h3>
+                </a>
+                <div class="supinfo">
+                    <strong class="price">400.00 EGP <SPan></SPan></strong>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--=================
+    end arrival
+==================-->
+
+<!-- ============================================================= -->
+
+<!--=================
+    start contact
+==================-->
+
+  <section class="contact" id="contact">
+      <h1 class="heading"  data-aos="fade-up" data-aos-duration="800" data-aos-once="true"> تواصل <span>معنا</span> </h1>
+        <div class="icons-container">
+            <div class="icons"  data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>العنوان</h3>
+                <p>المنصورة, الدقهلية, مصر</p>
+
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109390.
+                    46372591898!2d31.312971260122254!3d31.
+                    041514411885377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                    1!3m3!1m2!1s0x14f79db7a9053547%3A0xf8dab3bbed766c97!2sMansoura%2C%20Mansoura%20Qism%202%2C%20El%20Mansoura%2C%20
+                    Dakahlia%20Governorate!5e0!3m2!1sen!2seg!4v1679260135733!5m2!1sen!2seg"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    
+            </div>
+            <div class="icons"  data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>البريد الإلكتروني</h3>
+                <p>handcraft@gmail.com</p>
+                <p>handcraft@yahoo.com</p>
+
+            </div>
+            <div class="icons" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                <i class="fa-solid fa-phone-flip"></i> 
+                <h3>أرقام التواصل</h3>
+                <p>201-000-000-200+</p>
+                <p>201-000-000-300+</p>
+
+          </div>
+      </div>
+  </section>
+
+<!--=================
+    end contact
+==================-->
+
+<!-- ============================================================= -->
+
+<!--=================
+    start icons 
+==================-->
+
+<div class="cont-s">
+<section class="icons-cotainer cont-ss"  >
+    <div class="icons" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+        <i class="fa-solid fa-truck"></i> 
+        <div class="content">
+            <h3>الشحن مجانا</h3>
+            <p>الشحن مجاني الي جميع المحافظات</p>
+        </div>
+        
+    </div>
+    <div class="icons" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+        
+        <div class="content">
+            <h3>ساعات العمل</h3>
+            <p> خدمة 24 × 7 </p>
+        </div>
+        
+    </div>
+    <div class="icons" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+        <i class="fa-solid fa-headset"></i>
+        <div class="content">
+            <h3>الخط الساخن</h3>
+            <p> 19999 </p>
+        </div>
+        
+    </div>
+</section>
+</div>
+
+<!--=================
+    end icons 
+==================-->
+
+<!-- ============================================================= -->
+
+<!--=================
+    start newsletter 
+==================-->
+
+<div class="newsletter">
+    <section class="news-s">
+        <form action="" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+            <h3>اشترك للحصول على آخر التحديثات</h3>
+            <input type="email" name="" placeholder="ادخل بريدك الإلكتروني" id="" class="box">
+            <input type="submit" value="اشتراك" class="btn">
+        </form>
+    </section>
+    
+</div>
+
+<!--=================
+    end newsletter 
+==================-->
+
+<!-- ============================================================= -->
+
+<!--=================
+    start footer 
+==================-->
+
+ <div class="footer">
+     <section class="footer-s">
+         <div class="box-container" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+
+            <div class="box">
+                <h3> الأقسام</h3>
+                <a href="clothes.html"><i class="fa-solid fa-arrow-left"></i> ملابس</a>
+                <a href="Decorations.html"><i class="fa-solid fa-arrow-left"></i>  ديكورات</a>
+                <a href="accessories.html"><i class="fa-solid fa-arrow-left"></i>  اكسسوارات</a>
+                <a href="shoes-bags.html"><i class="fa-solid fa-arrow-left"></i> احذية& شنط</a>
+                
+                
+            </div>
+
+            <div class="box">
+                <h3>روابط سريعة</h3>
+                <a href="index.html"><i class="fa-solid fa-arrow-left"></i> الصفحة الرئيسية</a>
+                <a href="#shop"><i class="fa-solid fa-arrow-left"></i> المتجر</a>
+                <a href="cart.html"><i class="fa-solid fa-arrow-left"></i> عربة التسوق</a>
+                <a href="#contact"><i class="fa-solid fa-arrow-left"></i>  تواصل معنا</a>
+            </div>
+
+            <div class="box">
+                <h3>معلومات عنا</h3>
+                <p>هدفنا الأول والأخير هو تسويق منتجات الحرف اليدوية والحرص علي تنمية هذة الحرف وسهولة تداول منتجاتها بين الناس</p>
+            </div>
+         
+         </div>
+
+         <!-- social media -->
+         <div class="share">
+            <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook"  data-aos="fade-up" data-aos-duration="800" data-aos-once="true">   </a>
+            <a href="https://twitter.com/" target="_blank" class="fab fa-twitter"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">   </a>
+            <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"  data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">  </a>
+            <a href="https://www.linkedin.com/" target="_blank" class="fab fa-linkedin"  data-aos="fade-up" data-aos-duration="1400" data-aos-once="true">  </a>
+            <a href="https://www.pinterest.com/" target="_blank" class="fab fa-pinterest"  data-aos="fade-up" data-aos-duration="1600" data-aos-once="true">  </a>
+        </div>
+   
+            <div class="credit" > All rights reserved. Made by  <span>me</span> </div>
+
+         
+     </section>
+ </div>
+
+<!--=================
+    end footer 
+==================-->
+
+<!-- ============================================================= -->
+  
+<!--=================
+    js files  
+==================-->
+
+<!-- bootstrab -->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+<!-- aos animate -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init(
+      duration= 1000
+    );
+  </script>
+
+ 
+
+ <!-- Main theme script-->
+ <script src="js/theme.min.js"></script>
+<!-- script js -->
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
